@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: url("images/ai-bg.jpg") no-repeat center center/cover;
+  background: url("ai-bg.jpg") no-repeat center center/cover;
 }
 
 /* Main Big Card */
@@ -97,4 +97,5 @@ button:hover {
   margin-top: 25px;
   font-size: 16px;
   text-align: left;
+
 }
