@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive FAQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Frequently Asked Questions</h1>
+  <p class="subtitle">Interactive Help Section</p>
+
+  <div id="faq-container">
+
+  <div class="faq-card">
+    <div class="faq-question" onclick="toggleAnswer(this)">
+      What is Artificial Intelligence?
+    </div>
+    <div class="faq-answer">
+      AI is the simulation of human intelligence in machines.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question" onclick="toggleAnswer(this)">
+      What is Machine Learning?
+    </div>
+    <div class="faq-answer">
+      Machine learning allows systems to learn from data.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question" onclick="toggleAnswer(this)">
+      What is Data Science?
+    </div>
+    <div class="faq-answer">
+      Data science extracts insights from data.
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <div class="faq-question" onclick="toggleAnswer(this)">
+      What is Neural Network?
+    </div>
+    <div class="faq-answer">
+      Neural networks are brain-inspired computational models.
+    </div>
+  </div>
+
+</div>
+
+  <div class="input-section">
+    <textarea id="questionInput" placeholder="Add your question..."></textarea>
+    <button onclick="addFAQ()">Add Question</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
