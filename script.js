@@ -35,3 +35,8 @@ function addFAQ() {
   document.getElementById("questionInput").value = "";
   document.getElementById("answerInput").value = "";
 }
+
+  document.getElementById("questionInput").value = "";
+  document.getElementById("answerInput").value = "";
+}
+
