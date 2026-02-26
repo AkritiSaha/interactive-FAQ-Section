@@ -11,10 +11,16 @@ function toggleAnswer(element) {
 
 // Function to add new FAQ dynamically
 function addFAQ() {
-  const question = document.getElementById("questionInput").value.trim();
-  const answer = document.getElementById("answerInput").value.trim();
+  const questionInput = document.getElementById("questionInput");
+  const answerInput = document.getElementById("answerInput");
 
-  if (!question || !answer) return;
+  const question = questionInput.value.trim();
+  const answer = answerInput.value.trim();
+
+  if (!question || !answer) {
+    alert("Please enter both question and answer.");
+    return;
+  }
 
   const container = document.getElementById("faq-container");
 
@@ -32,11 +38,7 @@ function addFAQ() {
 
   container.appendChild(card);
 
-  document.getElementById("questionInput").value = "";
-  document.getElementById("answerInput").value = "";
+  // Clear input fields
+  questionInput.value = "";
+  answerInput.value = "";
 }
-
-  document.getElementById("questionInput").value = "";
-  document.getElementById("answerInput").value = "";
-}
-
